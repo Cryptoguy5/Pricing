@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 90%;
+            width: 90%;
+            display: flex;
+        }
+
+        .pricing {
+            height: 100%;
+            width: 33.3%;
+            border: 2px solid gray;
+        }
+
+        
+        
+        .top {
+            height: 10%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .middle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 24px;
+            gap: 5px;
+
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .white {
+            color: white;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        .p2 {
+            margin: 0;
+            color: gray;
+            position: relative;
+            left: 10px;
+        }
+
+        hr {
+            border-bottom: 2px solid gray;
+            width: 80%;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .span2 {
+            font-weight: bolder;
+            font-size: 72px;
+            margin: 0;
+        }
+
+        button {
+            margin: 50px;
+            width: 80%;
+            padding: 25px;
+            font-size: 36px;
+            color: white;
+            background-color: rgb(15, 146, 15);
+            border: none;
+            box-shadow: 0px 0px 15px 0px rgb(10, 83, 10);
+            border-radius: 20px;
+        }
+
+        @media (max-width: 680px) {
+            body {
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .main {
+                flex-direction: column;
+            }
+
+            .pricing {
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="pricing">
+          <div class="top">
+              <h2 class="white">
+                  Basic
+              </h2>
+          </div>
+          <div class="middle">
+            <p><span>Full</span> Email Support</p>
+            <p><span>25GB</span> of Storage</p>
+            <p><span>5</span> Domains</p>
+            <p><span>10</span> Email Addresses</p>
+            <hr />
+          </div>
+          <div class="bottom">
+              <p class="span2">
+                $25
+              </p>
+                <p class="p2">
+                    Sign Up
+                </p>
+                <button>
+                    Sign Up
+                </button>
+          </div>
+        </div>
+        <div class="pricing">
+        <div class="top">
+            <h2 class="white">
+                Pro
+            </h2>
+        </div>
+        <div class="middle">
+            <p><span>Full</span> Email Support</p>
+            <p><span>50GB</span> of Storage</p>
+            <p><span>10</span> Domains</p>
+            <p><span>20</span> Email Addresses</p>
+            <hr />
+          </div>
+          <div class="bottom">
+              <p class="span2">
+                $50
+              </p>
+                <p class="p2">
+                    Sign Up
+                </p>
+                <button>
+                    Sign Up
+                </button>
+          </div>
+        </div>
+        <div class="pricing">
+          <div class="top"> 
+            <h2 class="white">
+                Premium
+            </h2>
+          </div>
+          <div class="middle">
+            <p><span>Full</span> Email Support</p>
+            <p><span>Ultimate</span> of Storage</p>
+            <p><span>Ultimate</span> Domains</p>
+            <p><span>50</span> Email Addresses</p>
+            <hr />
+          </div>
+          <div class="bottom">
+              <p class="span2">
+                $75
+              </p>
+                <p class="p2">
+                    Sign Up
+                </p>
+                <button>
+                    Sign Up
+                </button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
